@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- project by Prashant Saini -->
+    <title>Mintlify Clone - Prashant Saini</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- mintlify uses inter for clean docs typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- top hero area containing nav and the main headers -->
+    <div class="hero-wrapper">
+        <!-- top nav -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./Mintlify_Logo_0.svg" alt="Mintlify Logo" style="height: 32px;">
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Contact sales</a>
+                <a href="#" class="btn btn-white">Start for free</a>
+            </div>
+        </nav>
+
+        <!-- hero content -->
+        <header class="hero-section">
+            <div class="announcement-pill">
+                <span class="badge-new">NEW</span>
+                <span>Self-updating docs with agent suggestions</span>
+                <span class="arrow">&rsaquo;</span>
+            </div>
+
+            <h1>The Intelligent Knowledge Platform</h1>
+            <p class="subtitle">Turn your company's knowledge into accurate, agent-ready context</p>
+
+            <form class="email-capture">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit" class="btn btn-white">Start now</button>
+            </form>
+        </header>
+
+        <!-- overlapping docs preview ui -->
+        <div class="docs-preview-container">
+            <div class="docs-window">
+                
+                <!-- sidebar -->
+                <aside class="docs-sidebar">
+                    <div class="sidebar-logo">
+                        <img src="./Mintlify_Logo_0.svg" alt="Mintlify Logo" style="height: 24px;">
+                    </div>
+                    
+                    <ul class="sidebar-nav">
+                        <li><a href="#" class="nav-item"><span>✨</span> Ask Assistant</a></li>
+                        <li><a href="#" class="nav-item active"><span>📖</span> Quickstart</a></li>
+                        <li><a href="#" class="nav-item"><span>⚙️</span> Global Settings</a></li>
+                        <li><a href="#" class="nav-item"><span>🤖</span> AI Optimization</a></li>
+                        <li><a href="#" class="nav-item"><span>🧩</span> Components</a></li>
+                        <li><a href="#" class="nav-item"><span>🎨</span> Themes</a></li>
+                    </ul>
+                </aside>
+
+                <!-- main area -->
+                <main class="docs-main">
+                    <!-- topbar inside mockup -->
+                    <div class="docs-topbar">
+                        <div class="tabs">
+                            <span class="tab active">Guides</span>
+                            <span class="tab">API Reference</span>
+                            <span class="tab">Changelog</span>
+                        </div>
+                        <div class="search-actions">
+                            <div class="search-box">
+                                <span>🔍 Search or ask</span>
+                                <kbd>⌘K</kbd>
+                            </div>
+                            <button class="btn btn-outline-sm">✨ Ask AI</button>
+                        </div>
+                    </div>
+
+                    <!-- content area -->
+                    <div class="content-split">
+                        <div class="article-content">
+                            <span class="breadcrumb">Getting Started</span>
+                            <h2>Quickstart Guide</h2>
+                            <p class="doc-desc">Start building intelligent documentation in under five minutes</p>
+
+                            <!-- dummy cards inside doc -->
+                            <div class="doc-cards-grid">
+                                <div class="doc-card">
+                                    <div class="doc-card-icon">🚀</div>
+                                    <div class="doc-card-text">Launch</div>
+                                </div>
+                                <div class="doc-card">
+                                    <div class="doc-card-icon">💻</div>
+                                    <div class="doc-card-text">Develop</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- right sidebar -->
+                        <div class="on-this-page">
+                            <strong>On this page</strong>
+                            <ul>
+                                <li class="active">Introduction</li>
+                                <li>Getting started</li>
+                                <li>AI optimization</li>
+                                <li>Themes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- trusted by logos -->
+    <section class="trusted-section">
+        <p>Powering documentation for the world's best teams</p>
+        <div class="logos-grid">
+            <h3 style="font-family: monospace; font-size: 24px; color: #94a3b8;">PLUG</h3>
+            <h3 style="font-family: sans-serif; font-size: 24px; font-weight:800; color: #94a3b8;">anthropic</h3>
+            <h3 style="font-family: serif; font-size: 24px; font-weight:bold; color: #94a3b8;">replit</h3>
+            <h3 style="font-family: sans-serif; font-size: 24px; font-weight:900; color: #94a3b8;">Vercel</h3>
+            <h3 style="font-family: monospace; font-size: 24px; color: #94a3b8;">Zapier</h3>
+        </div>
+    </section>
+
+    <!-- feature highlights -->
+    <section class="features-split">
+        <div class="container">
+            <div class="split-row">
+                <div class="split-text">
+                    <h2>Beautiful out of the box</h2>
+                    <p>Stop spending engineering cycles building documentation from scratch. Mintlify provides a stunning, performance-optimized template that matches your brand instantly.</p>
+                    <ul class="feature-ticks">
+                        <li>✓ Built-in dark mode</li>
+                        <li>✓ Global search powered by Algolia</li>
+                        <li>✓ Custom domain support</li>
+                    </ul>
+                </div>
+                <div class="split-visual">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Beautiful Docs">
+                </div>
+            </div>
+
+            <div class="split-row reverse">
+                <div class="split-text">
+                    <h2>Developer-first workflow</h2>
+                    <p>Manage your documentation directly from your codebase using MDX. Track changes via Git, branch your docs, and deploy automatically via pull requests.</p>
+                    <ul class="feature-ticks">
+                        <li>✓ MDX support</li>
+                        <li>✓ Git integration</li>
+                        <li>✓ Preview deployments</li>
+                    </ul>
+                </div>
+                <div class="split-visual">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Developer Workflow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- intelligent assistant preview -->
+    <section class="ai-assistant">
+        <div class="container">
+            <div class="ai-header">
+                <h2>Meet your new support engineer</h2>
+                <p>Mintlify Chat trained on your documentation instantly answers user questions, drastically reducing your support tickets.</p>
+            </div>
+            
+            <div class="ai-mockup">
+                <div class="ai-chat-window">
+                    <div class="ai-chat-msg user">
+                        How do I authenticate an API request?
+                    </div>
+                    <div class="ai-chat-msg bot">
+                        To authenticate an API request, you need to include your API key in the Authorization header as a Bearer token.
+                        <br><br>
+                        <code>Authorization: Bearer YOUR_API_KEY</code>
+                        <br><br>
+                        <span class="ai-source">Source: Authentication Guide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- enterprise features -->
+    <section class="enterprise">
+        <div class="container">
+            <div class="enterprise-header">
+                <h2>Enterprise ready</h2>
+                <p>Security, compliance, and control for large teams.</p>
+            </div>
+            
+            <div class="enterprise-grid">
+                <div class="ent-card">
+                    <div class="ent-icon">🔒</div>
+                    <h4>SOC 2 Type II</h4>
+                    <p>We are fully audited and compliant with the highest security standards.</p>
+                </div>
+                <div class="ent-card">
+                    <div class="ent-icon">👥</div>
+                    <h4>Role-Based Access</h4>
+                    <p>Granular permissions for your entire organization.</p>
+                </div>
+                <div class="ent-card">
+                    <div class="ent-icon">🌐</div>
+                    <h4>SSO Integration</h4>
+                    <p>SAML, Okta, and Google Workspace support.</p>
+                </div>
+                <div class="ent-card">
+                    <div class="ent-icon">📊</div>
+                    <h4>Advanced Analytics</h4>
+                    <p>Understand how users interact with your docs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- case studies cards -->
+    <section class="case-studies">
+        <div class="container">
+            <h2>Trusted by high-growth startups</h2>
+            <div class="case-grid">
+                <div class="case-card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Case Study 1" class="case-img">
+                    <div class="case-content">
+                        <h3>Cursor</h3>
+                        <p>"Mintlify allowed us to ship a world-class documentation site in hours instead of weeks."</p>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Case Study 2" class="case-img">
+                    <div class="case-content">
+                        <h3>Anthropic</h3>
+                        <p>"The best documentation platform for AI companies moving fast."</p>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Case Study 3" class="case-img">
+                    <div class="case-content">
+                        <h3>Pinecone</h3>
+                        <p>"Incredible DX and beautiful UX right out of the box."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- final bottom cta -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Start your documentation today</h2>
+            <p>Join thousands of companies building better docs with Mintlify.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary-dark">Start for free</button>
+                <button class="btn btn-outline-dark">Book a demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer block -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-brand">
+                    <div class="logo logo-dark">
+                        <img src="./Mintlify_Logo_0.svg" alt="Mintlify Logo" style="height: 32px;">
+                    </div>
+                    <p>The modern standard for public facing documentation.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Product</h4>
+                        <a href="#">Editor</a>
+                        <a href="#">Analytics</a>
+                        <a href="#">Security</a>
+                        <a href="#">Changelog</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Resources</h4>
+                        <a href="#">Documentation</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Community</a>
+                        <a href="#">Showcase</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mintlify Clone by Prashant Saini.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
