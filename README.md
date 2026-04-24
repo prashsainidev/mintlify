@@ -1,5 +1,9 @@
 # Mintlify Documentation Site Clone
 
+> **Preview:**
+> ![Mintlify Clone Preview](./Mintlify-Clone-Prashant-Saini.png)
+> *(Instructor note: Ye raha meri assignment design ka screenshot)*
+
 Hey there! This is my submission for the **Web Dev Cohort 2026**. I tackled the Mintlify clone assignment entirely from scratch using plain HTML and CSS. My primary focus was nailing the elegant, pristine, developer-first documentation vibe that Mintlify is famous for.
 
 **Author:** Prashant Saini
