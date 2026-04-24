@@ -31,12 +31,12 @@ a {
     padding: 0 24px;
 }
 
-/* top hero wrapper with gradient and image */
+/* main gradient background, tricky to get right without an image lol */
 .hero-wrapper {
     /* Using a dark teal to light blue gradient replacing the clouds image */
     background: linear-gradient(135deg, #123c52 0%, #1e6274 50%, #2f8ba1 100%);
     position: relative;
-    padding-bottom: 420px; /* Mathematically ensures the 500px mockup won't overlap the form */
+    padding-bottom: 420px; /* pushed down so the floating mockup window doesn't crash into the buttons */
 }
 
 /* nav styles */
@@ -210,7 +210,7 @@ a {
     color: rgba(255,255,255,0.7);
 }
 
-/* docs preview mockup */
+/* docs preview mockup (the hardest part to build manually) */
 .docs-preview-container {
     position: absolute;
     bottom: -150px;
@@ -430,7 +430,7 @@ a {
     font-weight: 500;
 }
 
-/* brands and logos */
+/* trusted brands row */
 .trusted-section {
     margin-top: 220px;
     text-align: center;
@@ -512,7 +512,7 @@ a {
     object-fit: cover;
 }
 
-/* chat mockup styling */
+/* chat bubble UI for the ai assistant section */
 .ai-assistant {
     background: #08090A;
     padding: 100px 0;
@@ -741,28 +741,96 @@ a {
     gap: 24px;
 }
 
-/* basic fallback media queries (requested to keep it clean) */
+/* =========================================
+   RESPONSIVE QUERIES (MEDIA)
+   ========================================= */
+
+/* Tablets & Smaller Laptops (Max Width: 1024px) */
 @media (max-width: 1024px) {
-    .enterprise-grid { grid-template-columns: repeat(2, 1fr); }
-    .split-row, .split-row.reverse { flex-direction: column; text-align: center; gap: 40px; }
-    .case-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-section h1 { font-size: 3rem; }
+    .hero-wrapper { padding-bottom: 300px; }
+    .docs-preview-container { bottom: -100px; width: 95%; }
+    .docs-window { height: 450px; }
+    .enterprise-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .split-row, .split-row.reverse { gap: 40px; }
+    .split-text h2 { font-size: 2rem; }
+    .case-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
     .footer-links { gap: 40px; }
 }
 
+/* Tablets (Max Width: 768px) */
 @media (max-width: 768px) {
-    .nav-links, .nav-actions { display: none; }
+    .navbar { padding: 20px; }
+    .nav-links { display: none; }
+    .hero-section { margin-top: 40px; }
     .hero-section h1 { font-size: 2.5rem; }
-    .docs-preview-container { position: relative; bottom: 0; transform: none; left: 0; width: 100%; margin-top: 40px; }
+    
+    /* Move docs preview from absolute to relative stacking on tablet/mobile */
     .hero-wrapper { padding-bottom: 60px; }
-    .trusted-section { margin-top: 40px; }
-    .docs-window { flex-direction: column; height: auto; }
-    .docs-sidebar { width: 100%; border-right: none; border-bottom: 1px solid #e2e8f0; }
-    .docs-topbar { flex-direction: column; height: auto; padding: 16px; gap: 16px; }
-    .content-split { flex-direction: column; padding: 20px; }
-    .on-this-page { width: 100%; border-left: none; padding-left: 0; margin-top: 32px; border-top: 1px solid #e2e8f0; padding-top: 24px; }
+    .docs-preview-container { 
+        position: relative; 
+        bottom: 0; 
+        transform: none; 
+        left: 0; 
+        width: 100%; 
+        margin-top: 40px; 
+    }
+    .trusted-section { margin-top: 40px; padding: 40px 20px; }
+    
+    .docs-window { flex-direction: column; height: auto; border-radius: 12px; }
+    .docs-sidebar { width: 100%; border-right: none; border-bottom: 1px solid #e2e8f0; padding: 16px; display: flex; flex-direction: column; }
+    .sidebar-nav { display: flex; flex-wrap: wrap; gap: 8px; }
+    .docs-topbar { flex-direction: column; height: auto; padding: 16px; gap: 16px; align-items: flex-start; }
+    .search-actions { width: 100%; justify-content: space-between; }
+    .search-box { flex: 1; margin-right: 12px; }
+    
+    .content-split { flex-direction: column; padding: 24px; }
     .article-content { padding-right: 0; }
+    .on-this-page { width: 100%; border-left: none; padding-left: 0; margin-top: 32px; border-top: 1px solid #e2e8f0; padding-top: 24px; }
+    
+    .logos-grid { gap: 30px; }
+    
+    .split-row, .split-row.reverse { flex-direction: column; text-align: center; margin-bottom: 80px; }
+    .split-text { display: flex; flex-direction: column; align-items: center; }
+    .feature-ticks { align-items: flex-start; text-align: left; }
+    .split-visual { height: 300px; width: 100%; }
+    
+    .ai-header h2 { font-size: 2rem; }
+    .ai-assistant { padding: 60px 20px; }
+    .ai-chat-msg { max-width: 90%; }
+    
+    .case-studies { padding: 60px 20px; }
     .case-grid { grid-template-columns: 1fr; }
-    .enterprise-grid { grid-template-columns: 1fr; }
+    
+    .footer { padding: 60px 20px 40px; }
     .footer-layout { flex-direction: column; gap: 40px; }
-    .footer-links { flex-direction: column; }
+    .footer-links { flex-direction: column; gap: 30px; }
+    .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
+}
+
+/* Mobile Phones (Max Width: 480px) */
+@media (max-width: 480px) {
+    .nav-actions { display: none; } /* Hide buttons to save space, rely on Hero CTA */
+    .hero-section h1 { font-size: 2rem; }
+    .subtitle { font-size: 1.05rem; }
+    .announcement-pill { flex-direction: column; text-align: center; padding: 12px; border-radius: 16px; gap: 8px; }
+    .badge-new { margin-bottom: 4px; }
+    
+    .email-capture { flex-direction: column; border-radius: 16px; padding: 8px; gap: 8px; background: transparent; border: none; }
+    .email-capture input { border-radius: 8px; padding: 12px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); }
+    .email-capture button { border-radius: 8px; width: 100%; }
+    
+    .doc-cards-grid { flex-direction: column; }
+    .doc-card { width: 100%; }
+    
+    .logos-grid h3 { font-size: 1.2rem !important; }
+    
+    .enterprise-grid { grid-template-columns: 1fr; }
+    .enterprise-header h2 { font-size: 1.75rem; }
+    
+    .split-visual { height: 200px; }
+    
+    .final-cta h2 { font-size: 2rem; }
+    .cta-buttons { display: flex; flex-direction: column; gap: 12px; width: 100%; padding: 0 20px; }
+    .cta-buttons .btn { width: 100%; }
 }
