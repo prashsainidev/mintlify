@@ -1,42 +1,48 @@
-# Mintlify Documentation Site Clone
+# Mintlify Landing Page Clone
 
-> **Preview:**
-> ![Mintlify Clone Preview](./Mintlify-Clone-Prashant-Saini.png)
-> *(Instructor note: Ye raha meri assignment design ka screenshot)*
+![Mintlify Clone Preview](./Mintlify-Clone-Prashant-Saini.png)
 
-Hey there! This is my submission for the **Web Dev Cohort 2026**. I tackled the Mintlify clone assignment entirely from scratch using plain HTML and CSS. My primary focus was nailing the elegant, pristine, developer-first documentation vibe that Mintlify is famous for.
+> **Web Dev Cohort 2026 - Peer Review Assignment**  
+> **Author:** Prashant Saini  
+> **Tech Stack:** Vanilla HTML5 & CSS3 (No Frameworks)
 
-**Author:** Prashant Saini
+---
 
-## 💡 Learning & Approach
+## 📌 Project Overview
 
-My goal was strict structural precision and UI fidelity. Instead of overloading it with heavy libraries, I utilized deep CSS flexbox and CSS Grid logic to replicate their precise sectioning and overlapping UI layout.
+This project is a high-fidelity, responsive clone of the Mintlify documentation website. It was built entirely from scratch using pure HTML and CSS to demonstrate proficiency in modern web layouts, CSS Grid/Flexbox architectures, and strict adherence to brand guidelines.
 
-### Sections I Recreated:
-I systematically built all 10 core sections requested in the assignment brief:
+## ⚙️ Technical Specifications
 
-1. **Top Navigation:** Fully populated with the leaf logo, nav links (`Resources`, `Documentation`, `Customers`, etc.), and dual CTA buttons.
-2. **Hero Section:** Implemented the "NEW" pill badge, massive main headline, subtitle, and input field layout. Instead of a flat screenshot for the background, I built a rich CSS `linear-gradient` (`#123c52` to `#2f8ba1`) to cleanly replicate the cloud aesthetic natively.
-3. **Documentation UI Preview:** I avoided just pasting an image here. Instead, I custom-coded an intricate CSS/HTML mockup element overlapping the hero section. It features the left sidebar (with Ask Assistant, Quickstart, etc.), a top-bar search simulating `CMD+K`, and a split content area with simulated documentation text.
-4. **Trusted Logos:** Cleanly styled row of dummy logos accurately spaced.
-5. **Feature Highlights:** Used `flex-direction: row-reverse` toggling for the alternating text & photo aesthetic.
-6. **Intelligent Assistant Preview:** Recreated the chatbot interaction screen utilizing customized CSS chat bubbles (simulating a User vs AI bot flow).
-7. **Enterprise Features:** A clean 4-column minimal grid specifying Compliance and SSO.
-8. **Case Studies:** Clean card-based layouts featuring Anthropic and Cursor testimonials.
-9. **Final Call-to-Action:** Bold typography exit layer to capture the user's attention.
-10. **Footer:** Built out the massive structured multi-column site navigation layout exactly as specified.
+### Architecture & Layout
+- **Semantic HTML5:** Structured with clear landmark elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`).
+- **CSS Flexbox & Grid:** Utilized for complex alignments, specifically within the overlapping documentation UI mockup and the multi-column footer.
+- **Fully Responsive:** Comprehensive media queries implemented for Desktop (`>1024px`), Tablet (`768px - 1024px`), and Mobile (`<480px`).
+- **Zero Dependencies:** No Tailwind, Bootstrap, or JavaScript were used, strictly adhering to assignment constraints.
 
-## 🎨 Styles, Fonts, and Colors
+### Brand Guidelines Implemented
+All brand assets and colors were strictly implemented according to the provided specification:
+- **Primary Brand (Mountain Meadow):** `#18E299`
+- **Dark Elements (Woodsmoke):** `#08090A`
+- **Base UI (White):** `#FFFFFF`
+- **Typography:** `Inter` (Google Fonts)
 
-- **Typography:** I imported the `Inter` font stack directly from Google Fonts (`font-family: 'Inter', -apple-system...`) to perfectly match Mintlify's modern SaaS typography.
-- **Colors:**
-  - **Mountain Meadow (Brand Green):** `#18E299` — Representing the primary leaf logo, "NEW" pill badge, and active-state highlights. (RGB: 24, 226, 153 | HSL: 158, 81, 49)
-  - **White (Base Text/UI):** `#FFFFFF` — Used for headings, floating UI cards, and high-contrast readable text. (RGB: 255, 255, 255)
-  - **Woodsmoke (Dark Layouts):** `#08090A` — Utilized for the dark Chat UI, button backgrounds, and strong dark slates. (RGB: 8, 9, 10 | HSL: 210, 11, 4)
+## 🏗️ Components Developed
 
-### Constraints Met:
-- **Only HTML and CSS:** Absolutely zero JavaScript and zero TailwindCSS used. 
-- **Organic Coder Structure:** Maintained a humanized coding style—the file layout and variable decisions mirror a real-world frontend pass.
-- *Note:* The assignment noted "desktop-only", but I dropped in some graceful CSS wrapper limits and very basic structural media queries at the bottom of the stylesheet so the site won't completely explode if accessed on a smaller screen.
+The following 10 core sections were successfully recreated:
+1. **Global Navigation:** Responsive top bar with brand SVG logo and CTA buttons.
+2. **Hero Section:** CSS-generated linear gradient background (`#123c52` to `#2f8ba1`), typography hierarchy, and email capture form.
+3. **Floating Docs Preview:** A purely CSS-constructed overlapping UI window simulating the Mintlify documentation dashboard (Sidebar, Search, Guides).
+4. **Trusted Partners:** Grid-based logo showcase.
+5. **Feature Showcases:** Alternating text and visual layouts utilizing `flex-direction: row-reverse`.
+6. **Intelligent Assistant:** Recreated chat-interface mockup using CSS bubbles.
+7. **Enterprise Features:** 4-column responsive grid layout.
+8. **Case Studies:** Card-based testimonials for Anthropic, Cursor, and Pinecone.
+9. **Pre-Footer CTA:** High-contrast call-to-action banner.
+10. **Site Footer:** Multi-column navigational links.
 
-Feel free to inspect the DOM elements! Thanks for reviewing my design.
+## 🚀 Setup Instructions
+To view this project locally:
+1. Clone this repository.
+2. Open `index.html` in any modern web browser or use an extension like VS Code Live Server.
+3. No build steps or installations required.
