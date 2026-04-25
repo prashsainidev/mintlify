@@ -1,0 +1,4 @@
+# Ignore large video recording files
+*.mp4
+*.webm
+*.mkv
